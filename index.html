@@ -1,0 +1,103 @@
+<!-- Author: Zhandos, Group SE-2516 — Assignment #3: Media Queries + Bootstrap Grid -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AITU Wiki | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Universe.png" type="image/png">
+</head>
+<body>
+    <div class="site-layout">
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Main navigation">
+            <div class="container">
+                <a href="index.html" class="navbar-brand nav-bar__logo"><img src="images/Universe.png" alt="AITU logo"> AITU | Wiki |</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AITUM.html">AITU_MAP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Staff_Info.html">Staff_Info</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside class="site-sidebar" aria-label="Explore AITU Wiki">
+        <h2>Explore AITU Wiki</h2>
+        <nav aria-label="Quick links">
+            <a href="index.html#highlights">Campus highlights</a>
+            <a href="index.html#gallery">Campus gallery</a>
+            <a href="about.html">About the team</a>
+            <a href="events.html">Events</a>
+            <a href="news.html">News</a>
+        </nav>
+    </aside>
+
+
+    <main>
+        <section class="hero">
+            <div class="container"><div class="row align-items-center g-4 hero__container">
+                <div class="hero__content col-12 col-lg-6">
+                    <h1 class="hero__title">AITU is an amazing world</h1>
+                    <p class="hero__desc">Clubs, mentors, hackathons and events that make campus life at AITU worth showing up for.</p>
+                    <div class="hero__actions btn-group" role="group" aria-label="Home actions">
+                        <a href="events.html" class="btn btn-dark btn-lg">See events</a>
+                        <a href="#highlights" class="hero__scroll" aria-label="Scroll to highlights">
+                            <img src="images/chevron-down.svg" alt="Scroll down">
+                        </a>
+                    </div>
+                </div>
+                <img class="hero__image col-12 col-lg-6" src="images/hero-illustration.svg" alt="Illustration of students studying and collaborating on campus">
+            </div></div>
+        </section>
+
+        <section class="features" id="highlights">
+            <div class="container">
+                <h2 class="section-title">Why students like it here</h2>
+                <div class="row g-4 mq-card-group">
+                    <div class="col-12 col-md-6 col-lg-4 mq-card"><article class="card h-100 shadow-sm"><img src="images/gallery-01.svg" class="card-img-top feature-icon" alt="Mentorship illustration"><div class="card-body"><h3 class="card-title">Mentorship</h3><p class="card-text">Senior students guide first-years through their first hard semester.</p><a class="btn btn-primary btn-sm" href="about.html">Explore Mentorship</a></div></article></div>
+                    <div class="col-12 col-md-6 col-lg-4 mq-card"><article class="card h-100 shadow-sm"><img src="images/gallery-02.svg" class="card-img-top feature-icon" alt="Hackathons illustration"><div class="card-body"><h3 class="card-title">Hackathons</h3><p class="card-text">Regular hands-on events for the Software Engineering school.</p><a class="btn btn-outline-primary btn-sm" href="events.html">Explore Hackathons</a></div></article></div>
+                    <div class="col-12 col-md-6 col-lg-4 mq-card"><article class="card h-100 shadow-sm"><img src="images/gallery-03.svg" class="card-img-top feature-icon" alt="Clubs illustration"><div class="card-body"><h3 class="card-title">Clubs &amp; societies</h3><p class="card-text">From robotics to debate — there's a group for almost everyone.</p><a class="btn btn-secondary btn-sm" href="news.html">Campus updates</a></div></article></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container gallery-section" id="gallery" aria-labelledby="gallery-title">
+            <h2 class="section-title" id="gallery-title">Campus life gallery</h2>
+            <div id="campusCarousel" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-indicators"><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button><button type="button" data-bs-target="#campusCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button></div><div class="carousel-inner"><div class="carousel-item active"><img src="images/gallery-01.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 1"></div><div class="carousel-item"><img src="images/gallery-02.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 2"></div><div class="carousel-item"><img src="images/gallery-03.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 3"></div><div class="carousel-item"><img src="images/gallery-04.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 4"></div><div class="carousel-item"><img src="images/gallery-05.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 5"></div><div class="carousel-item"><img src="images/gallery-06.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 6"></div><div class="carousel-item"><img src="images/gallery-07.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 7"></div><div class="carousel-item"><img src="images/gallery-08.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 8"></div><div class="carousel-item"><img src="images/gallery-09.svg" class="d-block w-100 carousel-campus-img" alt="AITU campus life illustration 9"></div></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#campusCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#campusCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <table class="footer-team">
+                <caption>Team — AITU | Wiki, Assignment #3</caption>
+                <thead>
+                    <tr><th>Group</th><th>Name</th><th>Pages created</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>SE-2516</td><td>Zhandos</td><td>Home, About</td></tr>
+                    <tr><td>SE-2516</td><td>Adilzhan</td><td>News, Events</td></tr>
+                    <tr><td>SE-2516</td><td>Alikhan</td><td>AITU_MAP, Staff_Info</td></tr>
+                </tbody>
+            </table>
+            <p style="text-align:center; margin-top:1.2rem; font-size:0.85rem;">&copy; AITU |Wiki|</p>
+        </div>
+    </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
